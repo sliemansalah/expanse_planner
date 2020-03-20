@@ -50,7 +50,14 @@ class MyHomePage extends StatelessWidget {
                             width:2
                           )),
                           padding: EdgeInsets.all(10),
-                      child: Text(tx.amount.toString()),
+                      child: Text(
+                        tx.amount.toString(),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.purple
+                        ),
+                        ),
                     ),
                     Column(
                       children: <Widget>[
