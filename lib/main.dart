@@ -11,12 +11,13 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
-          Card(
-            color: Colors.blue,
-            child: Container(
-            width: double.infinity,//100,
-            child: Text('Chart')),
-            elevation: 5,
+          Container(
+            width: double.infinity,
+            child: Card(
+              color: Colors.blue,
+              child: Text('Chart'),
+              elevation: 5,
+            ),
           ),
            Card(
             child: Text('List of TX'),
