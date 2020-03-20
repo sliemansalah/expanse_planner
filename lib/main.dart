@@ -59,8 +59,8 @@ class MyHomePage extends StatelessWidget {
                 TextField(decoration: InputDecoration(labelText: 'Amount'),
                 controller: amoutController,
              ),
-                FlatButton(child: Text('Add Transaction'),
-                textColor: Colors.purple,
+                FlatButton(child: Text('Add Transaction',),
+                textColor: Colors.purple, 
                 onPressed: () {
                   print(titleController.text);
                   print(amoutController.text);
