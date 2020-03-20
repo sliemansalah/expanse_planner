@@ -21,6 +21,9 @@ class MyHomePage extends StatelessWidget {
     )
   ];
 
+  String titleInput;
+  String amountInput;
+
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
@@ -47,14 +50,19 @@ class MyHomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                 TextField(decoration: InputDecoration(
-                  labelText: 'Title'
-                ),),
+                  labelText: 'Title',
+                ),
+                onChanged: (val){titleInput = val;},),
                 TextField(decoration: InputDecoration(
                   labelText: 'Amount'
-                ),),
+                ),
+                onChanged: (val){amountInput=val;},),
                 FlatButton(child: Text('Add Transaction'),
                 textColor: Colors.purple,
-                onPressed: () {},)
+                onPressed: () {
+                  print(titleInput);
+                  print(amountInput);
+                },)
               ]),
             ),
           ),
